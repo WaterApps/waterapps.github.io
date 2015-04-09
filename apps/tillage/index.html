@@ -1,0 +1,304 @@
+<!DOCTYPE html>
+
+<!-- Note: this is the Spacelab example template from bootswatch.com -->
+
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <title>Tillage App</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Apps for Precision Farm Management.">
+    <meta name="author" content="Aaron Ault">
+
+    <!--[if lt IE 9]>
+      <script src="http://html5shim.googlecode.com/svn/trunk/html5.js"></script>
+    <![endif]-->
+
+    <link href="../../bootstrap/bootstrap.min.css" rel="stylesheet">
+    <link href="../../bootstrap/css/bootstrap-responsive.min.css" rel="stylesheet">
+    <link href="../../font-awesome/css/font-awesome.min.css" rel="stylesheet">
+    <link href="../../bootswatch/bootswatch.css" rel="stylesheet">
+
+    <style>
+      section {
+        padding-top: 0px;
+      }
+
+      p.lead {
+        padding-bottom: 0px;
+        margin-bottom: 0px;
+      }
+
+      #dropdown-menu-link {
+        color: #2D2D2D;
+      }
+      #dropdown-menu-link:hover {
+        color: #F0F0F0;
+      }
+
+    </style>
+  </head>
+
+  <body class="preview" id="top" data-spy="scroll" data-target=".subnav" data-offset="80">
+
+ <!-- Navbar
+================================================== -->
+<div class="navbar navbar-fixed-top">
+  <div class="navbar-inner">
+    <div class="container">
+      <a class="btn btn-navbar" data-toggle="collapse" data-target=".nav-collapse">
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+      </a>
+      <a class="brand" href="/">OpenATK</a>
+
+      <div class="nav-collapse collapse" id="apps-menu">
+        <ul class="nav" id="apps-menu-left">
+          <li><a id="swatch-link" href="">Download</a></li>
+          <li><a id="swatch-link" href="#progress">Progress</a></li>
+          <li><a id="swatch-link" href="#support">Support</a></li>
+          <li><a id="swatch-link" href="https://groups.google.com/forum/#!forum/openagtoolkit">Mailing List</a></li>
+          <li><a id="swatch-link" href="https://github.com/OpenATK"><i class="icon-github icon-large"></i>GitHub</a></li>
+          <li><a id="swatch-link" href="mailto:info@openatk.com">Contact</a></li>
+        </ul>
+
+        <ul class="nav pull-right">
+          <li><a id="swatch-link" href="http://isoblue.org">ISOBlue <i class="icon-share-alt"></i></a></li>
+        </ul>
+
+      </div>
+
+    </div>
+  </div>
+</div>
+
+<div class="container">
+
+
+<!-- Masthead
+================================================== -->
+<header class="jumbotron subhead" id="overview">
+  <div class="row">
+    <div class="span7">
+      <h1 style="font-weight: normal">Open Ag Toolkit</h1>
+      <p class="lead">Precision Farm Management.</p>
+      <br/>
+      <p>We want to make it easier to manage farms by improving the way farmers
+      are able to collect and use information.  So, we're writing some
+      simple, free, open-source mobile apps that sync across everyone on a farm through existing cloud services 
+      like <a href="http://trello.com">Trello</a> and <a href="http://dropbox.com">Dropbox</a>.</p>
+    </div>
+    <div class="span4 well" style="padding-top: 0px;">
+      <h3>Farmers</h3>
+      <p>See how OpenATK can <a href="#overview">work on your farm</a>.</p>
+
+      <h3>Developers</h3>
+      <p>You can join the <a href="https://groups.google.com/forum/#!forum/openagtoolkit">mailing list</a>,
+         fork us on <a href="https://github.com/OpenATK">GitHub</a>, read the <a href="#docs">docs</a>,
+         and watch progress on <a href="https://trello.com/openatk">Trello</a>.
+      </p>
+    </div>
+  </div>
+  <div class="subnav">
+    <ul class="nav nav-pills">
+      <li><a href="#overview">Overview</a></li>
+      <li><a href="#apps">Apps</a></li>
+      <li><a href="#developer">Developer</a></li>
+      <li><a href="#progress">Progress</a></li>
+      <li><a href="#support">Support</a></li>
+    </ul>
+  </div>
+
+</header>
+
+
+<!-- Overview 
+================================================== -->
+<section id="overview">
+  <div class="page-header">
+    <h1>Overview</h1>
+
+    <p>There are many precision agriculture tools out there for measuring agriculture: yield, locations, 
+    seed population, etc.  What is missing is the ability to <i>manage</i> agriculture: track planting
+    progress, plan fall tillage, decide which fields to spray first, etc.  Many existing
+    management platforms require a farm to adapt their farm to software, rather than enabling 
+    them to use software that adapts to their farm.</p>
+
+    <p class="lead"><i class="icon-truck"></i>&nbsp;&nbsp; Apps that Work</p>
+    <p>Spend time farming, not reading user manuals and typing away endlessly on that little phone
+    keyboard.  We design our apps from the farmer's perspective, minimizing the number of screens, clicks,
+    swipes, and confusing messages that you have to deal with.  Open the app, do what you need, then
+    go right back to some real work.</p>
+
+    <p class="lead"><i class="icon-group"></i>&nbsp;&nbsp; Apps that Work Together</p>
+    <p>Each app is designed to work just fine by itself for a specific job.  Use only the apps that help 
+    you, leave out the ones that might complicate things.  The apps you decide to use will work
+    together by sharing information among themselves where sharing makes sense.</p>
+
+    <p class="lead"><i class="icon-refresh"></i>&nbsp;&nbsp; Apps that Work with Everyone</p>
+    <p>If everyone on your farm has the same information when they need it, it is more likely to be correct and
+    useful.  Each of our apps synchronize everything securely between all the devices on a farm,
+    so everyone has the same list of fields that need to be chiseled, the same list of fields to plant,
+    etc.</p>
+
+    <p class="lead"><i class="icon-time"></i>&nbsp;&nbsp; Apps that Work Forever</p>
+    <p>It's hard to look at the past ten years of information for a field if your record keeping software
+    company went out of business two years ago.  We take a different approach: we store information in ways
+    that you can use without the need for our apps.  Planting dates are in spreadsheets, rocks to pick up
+    are in a simple list on Trello.  This way you truly <i>own</i> your data.</p>
+
+    <p class="lead"><i class="icon-lock"></i>&nbsp;&nbsp; Apps that Work Securely</p>
+    <p>No one but you should have access to your information.  We store things in any cloud service that
+    you already trust: Google Drive, Dropbox, Trello, etc.  Each app can use any one of the existing
+    cloud services that you may already use.  Your information as private as the best cloud security
+    can provide.</p>
+
+    <p>Look through the current <a href="#apps">apps</a> to see if any might work for your farm.  We're 
+    adding more all the time.</p>
+
+  </div>
+
+</section>
+
+<!-- #apps
+================================================== -->
+<section id="apps">
+  <div class="page-header">
+    <h1>Apps</h1>
+    <div class="row">
+      <div class="span12 well text-center">
+        <div class="row">
+          <div class="span2"></div>
+          <div class="span2">
+            <a class="lead" href="https://play.google.com/store/apps/details?id=edu.purdue.autogenics.rockapp">
+              <img src="images/rockapp.png" /><br/>
+              Rock App
+            </a>
+          </div>
+          <div class="span2">
+            <img src="images/tillageapp.png" /><br/>
+            Tillage App
+          </div>
+          <div class="span2">
+            <img src="images/trelloapp.png" /><br/>
+            Trello App
+          </div>
+          <div class="span2"></div>
+        </p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- #developers
+================================================== -->
+<section id="developers">
+  <div class="page-header">
+    <h1>Developers</h1>
+    <p>You can join the <a href="https://groups.google.com/forum/#!forum/openagtoolkit">mailing list</a>,
+    fork us on <a href="https://github.com/OpenATK"><i class="icon-github"></i>GitHub</a>, read the <a href="#docs">docs</a>,
+       and see the development roadmap on <a href="https://trello.com/openatk">Trello</a>.  And, of course,
+       you can always <a href="mailto:info@openatk.com">email us</a> for more information.
+    </p>
+
+    <p class="lead">Docs</p>
+    <p>Each app has its own development resources: functional specs, UI mockups, documentation, and code.
+    Click on <a href="#apps">any app above</a> to access its information.
+
+    <p class="lead">Process and Design</p>
+    <p>Our development process starts with functional specifications.  If you don't know what those are,
+    here's <a href="http://www.joelonsoftware.com/articles/fog0000000036.html">Joel Spolsky to explain it</a>.</p>
+
+    <p>Identify the types of users who will use the app (limit it to about 3 or so), give them names, and then
+    provide user stories about how they might use the app in daily life.  Then add in user interface mockups
+    (<a href="http://balsamiq.com/">Balsamiq</a> works great) showing all the main screens a user will see.
+
+    <p>Then start writing code, updating the funcitonal specs as things change during development.</p>
+    
+    <p>There are also shared libraries available on <a href="https://github.com/OpenATK"><i class="icon-github"></i>GitHub</a>
+    to ease the process of adapting your app to any particular
+    cloud storage.  When adapting an app to synchronize via the cloud, be sure to design the backend storage format
+    to be human-readable outside your app if possible.  Since users are welcome to manually change any
+    backend data, be sure to make any parsers or data loaders as tolerant as possible.</p>
+
+    <p class="lead">Ideas for Apps</p>
+    <p>If you've got an idea for an app, a great place to start is by writing up a functional spec on
+    <a href="http://docs.google.com">Google Docs</a> to tell us how you think the app might work and who you 
+    have in mind to use it.  Send a link for it to the 
+    <a href="https://groups.google.com/forum/#!forum/openagtoolkit">mailing list</a> to get some feedback and
+    convince the community to get it on the roadmap.</p>
+
+  </div>
+</section>
+
+
+
+<!-- #progress
+================================================== -->
+<section id="progress">
+  <div class="page-header">
+    <h1>Progress</h1>
+
+    <p class="lead">June 17, 2013</p>
+    <p>We're going live!  We're all Android for now, but We've got our first three apps: <a href="apps/rock/index.html">Rock App</a>, 
+    <a href="apps/tillage/tillage.html">Tillage App</a>, and <a href="apps/trello/trello.html">Trello App</a>.
+    We also have a shared Trello library that handles synchronizing data between generic apps and Trello.
+    There are many, many more things to do including:</p>
+    <ul>
+      <li>More apps: we have more planned apps than people to develop them.</li>
+      <li>More platforms: we're only on Android now.  iOS will come as soon as we get some people to work on it.</li>
+      <li>More cloud storage libraries: we've only got Trello support now.  Dropbox's new 
+          <a href="https://www.dropbox.com/developers/datastore">Datastore API</a> has caught our eye and moved them up
+          the list ahead of Google Drive.</li>
+      <li>More support and community: to give this project long-term stamina, we're actively seeking partners
+          and community developers who would like to contribute.</li>
+
+    </ul>
+
+  </div>
+</section>
+
+<!-- #support
+================================================== -->
+<section id="support">
+  <div class="page-header">
+    <h1>Support</h1>
+    <p>We are actively seeking contributors for this project and <a href="http://isoblue.org">ISOBlue</a>, so 
+    if you like either the concept or any of our apps, please <a href="mailto:info@openatk.com">contact us</a> 
+    for more information.</p>
+
+    <p>A special thanks for all our support this far:
+      <ul>
+        <li>Funding from the USDA's NIFA program</li>
+        <li>App design work by <a href="http://www.ingredientsdesign.com/">Ingredients Design</a></li>
+      </ul></p>
+
+  </div>
+</section>
+
+
+<!-- Footer
+================================================== -->
+<footer id="footer">
+  <p class="pull-right"><a href="#top">Back to top</a></p>
+  Site template modified from <a href="http://bootswatch.com/cosmo/">Bootswatch Cosmo</a>.
+  Site code licensed under the <a href="http://www.apache.org/licenses/LICENSE-2.0">Apache License v2.0</a>.<br/>
+</footer>
+
+</div><!-- /container -->
+
+
+
+    <!-- Le javascript
+    ================================================== -->
+    <!-- Placed at the end of the document so the pages load faster -->
+    <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.9.1/jquery.min.js"></script>
+    <script src="bootswatch/jquery.smooth-scroll.min.js"></script>
+    <script src="bootstrap/js/bootstrap.min.js"></script>
+    <script src="bootswatch/bootswatch.js"></script>
+
+
+  </body>
+</html>
+

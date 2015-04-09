@@ -1,1 +1,227 @@
-Hello.
+<!DOCTYPE html>
+
+<!-- Note: this is the Spacelab example template from bootswatch.com -->
+
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <title>Water Apps</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Apps for Watershed Management.">
+    <meta name="author" content="Aaron Ault">
+
+    <!--[if lt IE 9]>
+      <script src="http://html5shim.googlecode.com/svn/trunk/html5.js"></script>
+    <![endif]-->
+
+    <link href="bootstrap/bootstrap.min.css" rel="stylesheet">
+    <link href="bootstrap/css/bootstrap-responsive.min.css" rel="stylesheet">
+    <link href="font-awesome/css/font-awesome.min.css" rel="stylesheet">
+    <link href="bootswatch/bootswatch.css" rel="stylesheet">
+
+    <style>
+      section {
+        padding-top: 0px;
+        margin-top: 0px;
+      }
+      
+
+      p.lead {
+        padding-bottom: 0px;
+        margin-bottom: 0px;
+      }
+
+    </style>
+  </head>
+
+  <body class="preview" id="top" data-spy="scroll" data-target=".subnav" data-offset="80">
+
+ <!-- Navbar
+================================================== -->
+<div class="navbar navbar-fixed-top">
+  <div class="navbar-inner">
+    <div class="container">
+      <a class="btn btn-navbar" data-toggle="collapse" data-target=".nav-collapse">
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+      </a>
+      <a class="brand" href="/">WMAC</a>
+
+      <div class="nav-collapse collapse" id="apps-menu">
+        <ul class="nav" id="apps-menu-left">
+
+          <li class="dropdown">
+            <a class="dropdown-toggle" data-toggle="dropdown" href="#">Apps <b class="caret"></b></a>
+             <ul class="dropdown-menu" id="swatch-menu">
+               <!-- Apps list here -->
+               <li><a id="dropdown-menu-link" href="https://play.google.com/store/apps/details?id=com.waterapps.waterplane">Water Plane App</a></li>
+               <li><a id="dropdown-menu-link" href="https://play.google.com/store/apps/details?id=org.waterapps.watershed">Watershed Delineation App</a></li>
+             </ul>
+          </li>
+
+          <li><a id="swatch-link" href="#progress">Progress</a></li>
+          <li><a id="swatch-link" href="#support">Support</a></li>
+          <li><a id="swatch-link" href="https://groups.google.com/forum/#!forum/waterapps">Mailing List</a></li>
+          <li><a id="swatch-link" href="https://github.com/WaterApps"><i class="icon-github icon-large"></i>GitHub</a></li>
+          <li><a id="swatch-link" href="mailto:info@waterapps.org">Contact</a></li>
+        </ul>
+
+       </div>
+
+    </div>
+  </div>
+</div>
+
+<div class="container">
+
+
+<!-- Masthead
+================================================== -->
+<header class="jumbotron subhead" id="overview">
+  <div class="row" style="padding-bottom: 0px; margin-bottom: 0px;">
+    <div class="span7 text-center">
+      <h1>Watershed Management Apps Center</h1>
+      <p class="lead">Watershed management in your pocket.</p>
+      <br>
+      <p>We want to make it easier to make informed decisions about watershed management
+      in the field.<br/> So, we're writing some simple, free, open-source mobile apps that can help.</p>
+    </div>
+    <div class="span4 well text-center" id="apps">
+      <div class="row">
+        <div class="span2">
+          <a class="lead" href="https://play.google.com/store/apps/details?id=com.waterapps.waterplane">
+            <img src="images/waterapp150.png" /><br/>
+            Water Plane App
+          </a>
+        </div>
+
+        <div class="span2">
+          <a class="lead" href="https://play.google.com/store/apps/details?id=org.waterapps.watershed">
+            <img src="images/watershedelineation150.png" /><br/>
+            Watershed Delineation App
+          </a>
+        </div>
+
+      </div>
+    </div>
+  </div>
+  <div class="subnav">
+    <ul class="nav nav-pills">
+      <li><a href="#apps">Apps</a></li>
+      <li><a href="#overview">Overview</a></li>
+      <li><a href="#developer">Developer</a></li>
+      <li><a href="#progress">Progress</a></li>
+      <li><a href="#support">Support</a></li>
+    </ul>
+  </div>
+
+</header>
+
+
+<!-- Overview 
+================================================== -->
+<section id="overview">
+  <div class="page-header">
+    <h1>Overview</h1>
+    We're just getting started, so please check back soon for more information.  Or, you could 
+    <a href="mailto:info@waterapps.org">send us an email</a> to let us know you're interested.
+  </div>
+
+</section>
+
+<!-- #developers
+================================================== -->
+<section id="developers">
+  <div class="page-header">
+    <h1>Developers</h1>
+    <p>You can join the <a href="https://groups.google.com/forum/#!forum/waterapps">mailing list</a>,
+    fork us on <a href="https://github.com/WaterApps"><i class="icon-github"></i>GitHub</a>, read the <a href="#developer">docs</a>,
+    and see the development roadmap on <a href="https://trello.com/waterapps">Trello</a>.  And, of course,
+    you can always <a href="mailto:info@waterapps.org">email us</a> for more information.  Additional documentation
+    for each app will be coming soon.
+    </p>
+<!--
+    <p class="lead">Docs</p>
+    <p>Each app has its own development resources: functional specs, UI mockups, documentation, and code.
+    Click on <a href="#apps">any app above</a> to access its information.
+-->
+    <p class="lead">Process and Design</p>
+    <p>Our development process starts with functional specifications.  If you don't know what those are,
+    here's <a href="http://www.joelonsoftware.com/articles/fog0000000036.html">Joel Spolsky to explain it</a>.</p>
+
+    <p class="lead">Ideas for Apps</p>
+    <p>If you've got an idea for an app, a great place to start is by writing up a functional spec on
+    <a href="http://docs.google.com">Google Docs</a> to tell us how you think the app might work and who you 
+    have in mind to use it.  Send a link for it to the 
+    <a href="https://groups.google.com/forum/#!forum/waterapps">mailing list</a> to get some feedback and
+    convince the community to get it on the roadmap.</p>
+
+  </div>
+</section>
+
+
+
+<!-- #progress
+================================================== -->
+
+<section id="progress">
+  <div class="page-header">
+    <h1>Progress</h1>
+
+    <p class="lead">July 17, 2013</p>
+    <p>We're going live at ASABE!  Our first two apps will be available on Google Play: the  
+      <a href="https://play.google.com/store/apps/details?id=com.waterapps.waterplane">Water Plane App</a>
+      and the
+      <a href="https://play.google.com/store/apps/details?id=org.waterapps.watershed">Watershed Delineation App</a>.
+      Both apps use LiDAR elevation data on a mobile device in the field.  </p>
+      <p>The water plane app helps to visualize
+      elevations by enabling users to move an imaginary plane of water up and down on the map, illustrating relative
+      elevation across a landscape.</p>
+      <p>The watershed delineation app uses the same data to compute how water will likely
+      flow across the landscape for a given rainfall event.  Given a small selected area, the app will outline the 
+      sections of the landscape which flow into that area.</p>
+      <p>Both apps are freely available for Android, so please give them a try and 
+      <a href="mailto:info@waterapps.org">let us know what you think</a>!
+
+  </div>
+</section>
+
+<!-- #support
+================================================== -->
+<section id="support">
+  <div class="page-header">
+    <h1>Support</h1>
+<!--    <p>We are actively seeking contributors for this project.  If you like either the concept or any of our apps, 
+please <a href="mailto:info@waterapps.org">contact us</a> for more information.</p> -->
+
+    <p>This project is funded by USDA NIFA under grant number 2011-51130-31119.</p>
+
+  </div>
+</section>
+
+
+<!-- Footer
+================================================== -->
+<footer id="footer">
+  <p class="pull-right"><a href="#top">Back to top</a></p>
+  Site template modified from <a href="http://bootswatch.com/spacelab/">Bootswatch Spacelab</a>.
+  Site code licensed under the <a href="http://www.apache.org/licenses/LICENSE-2.0">Apache License v2.0</a>.<br/>
+</footer>
+
+</div><!-- /container -->
+
+
+
+    <!-- Le javascript
+    ================================================== -->
+    <!-- Placed at the end of the document so the pages load faster -->
+    <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.9.1/jquery.min.js"></script>
+    <script src="bootswatch/jquery.smooth-scroll.min.js"></script>
+    <script src="bootstrap/js/bootstrap.min.js"></script>
+    <script src="bootswatch/bootswatch.js"></script>
+
+
+  </body>
+</html>
+
